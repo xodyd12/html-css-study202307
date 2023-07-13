@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 500px;
+      height: 500px;
+      background: orange;
+      margin-left: 100px;
+
+      padding-top: 50px;
+      padding-left: 50px;
+
+      /* 패딩, 보더로 인해 박스가 커지는 것을 방지 */
+      box-sizing: border-box;
+    }
+    .box {
+      width: 250px;
+      height: 250px;
+      background: tomato;
+      font-size: 2em;
+      color: white;
+
+      padding: 20px;
+    }
+
+    .card {
+      width: 250px;
+      height: 350px;
+      border: 2px solid gray;
+      margin: 50px auto;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 5px 5px #999;
+    }
+    .card .album {
+      height: 250px;
+      /* background: lightgray; */
+    }
+    .card .album img {
+      width: 100%;
+    }
+    .card .content {
+      /* border: 2px solid #000; */
+      padding: 20px 7px;
+      background: rgba(180, 180, 180, 0.8);
+      border-radius: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="album">
+      <img src="../../OIP.jpg" alt="곰돌이 카드">
+    </div>
+    <p class="content">
+      곰돌이 카드
+    </p>
+  </div>
+  
+  <div class="container">
+    <div class="box">안녕안녕</div>
+  </div>
+</body>
+</html>
