@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            /* 액자 400 x 300 */
+            width: 400px;
+            height: 300px;
+            border: 2px solid red;
+            margin: 50px auto 0;
+
+            /* 사진: 600 x 400 -3 : 2 */
+            /* 가로기준 400 x 260 */
+            /* 세로기준 450 x 300 */
+            background-image: url(../../flower.jpg);
+            background-size: 450px 350px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
