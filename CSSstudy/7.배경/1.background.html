@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 550px;
+            height: 350px;
+            border: 4px dashed gray;
+            /* 배경속성 */
+            background: orange;
+            background-image: url(../../sky.jpg);
+            /* width height 길이 */
+            background-size: 100px 100px;
+            background-repeat: no-repeat;
+
+            /* x축 y축 */
+            background-position: center;
+
+            background: no-repeat red url('../../sky.jpg') center / cover;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
