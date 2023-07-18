@@ -1,74 +1,6 @@
 @import url('common.css');
+@import url('include.css');
 
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* header style */
-.main-header {
-  background: #000;
-  color: #fff;
-  padding: 30px 16px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-header h1 {
-  /* background: yellowgreen; */
-  /* float: left; */
-  margin-left: 10px;
-  margin-top: 10px;
-  flex: 3;
-}
-.main-header .main-header__brand {
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.main-header .main-nav {
-  /* background: tomato; */
-  /* float: right; */
-  margin-top: 5px;
-  flex: 7;
-}
-.main-header .main-nav .main-nav__items {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.main-header .main-nav .main-nav__item {
-  /* border: 1px solid #fff; */
-  /* float: left; */
-  margin: 0 16px;
-}
-.main-header .main-nav .main-nav__item a {
-  display: block;
-  font-weight: 700;
-  padding: 3px 0;
-}
-.main-header .main-nav .main-nav__item a:hover {
-  color: #888;
-  border-bottom: 5px solid #888;
-}
-
-.main-header .main-nav .main-nav__item--cta a {
-  background: #ff1b68;
-  padding: 8px 16px;
-  border-radius: 8px;
-}
-
-.main-header .main-nav .main-nav__item--cta a:hover {
-  border: none;
-  color: #ff1b68;
-  background: #fff;
-}
-
-
-#product-overview {
-  background: url('anti.jpg')
-     no-repeat center / cover;
-  height: calc(100vh - 97px);
-}
 
 
 /* choose plan style */
@@ -139,4 +71,41 @@ body {
 #plans .plan-wrapper .plan .btn-group{
     margin: 20px 0;
 }
-
+/* key-features style */
+#key-features{
+    flex-direction: column;
+    display:flex;
+    width: 100%;
+    height: 300px;
+    background: #ff1b68;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    color: white;  
+}
+#key-features .section-title{
+    margin-top: 50px;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+#key-features .key-feature__list{
+    margin-top: 30px;
+    display:flex;
+    justify-content: space-evenly;
+}
+#key-features .key-feature__list .key-feature .key-feature__image{
+    margin-left: 130px;
+    margin-bottom: 30px;
+    width:  110px;
+    height: 110px;
+    background: pink;
+    border: 3px;
+    border-radius: 50%;
+}
+#key-features .key-feature__list .key-feature__description{
+    margin-left: 60px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
