@@ -11,6 +11,10 @@ body {
   padding: 30px 16px;
   display: flex;
   justify-content: space-between;
+
+  position: fixed;
+  width: 100%;
+  top:0;
 }
 
 .main-header h1 {
