@@ -1,0 +1,71 @@
+@import url(../../common.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+
+body{
+    color: white;
+    font: size 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* header style */
+header{
+    background: orange;
+    padding: 20px 0;
+    /* 헤더가 마우스를 스크롤 하면 따라 움직이도록 설정 */
+    position: fixed;
+    /* 헤더를 고정시키면 가로가 깨져서 가로는 100%로 맞춤 */
+    width: 100%;
+    /* 헤더를 맨 위로 고정 후 맨 앞으로 나오게 함 */
+    top: 0;
+    z-index: 999;
+}
+header .inner-header{
+    /* background: tomato; */
+    width: 92%;
+    margin: 0 auto;
+    /* 수평정리 */
+    display: flex;
+    /* 가로축 센터로 정리 */
+    align-items: center;
+}
+header .inner-header .logo{
+    /* border: 2px solid aqua; */
+    /* 비율 정리 */
+    flex:1;
+}
+header .inner-header .logo img{
+    /* 세로 길이 정리 */
+    height: 60px;
+}
+header .inner-header .intro-text{
+    /* border: 2px solid violet; */
+    /* 비율정리 */
+    flex:4;
+    font-weight: 700;
+    font-size: 1.7em;
+    /* 소문자를 대문자로 */
+    text-transform: uppercase;
+}
+header .inner-header .menu-open{
+    border: 2px solid greenyellow;
+    /* 비율정리 */
+    flex: 1;
+    font-weight: 700;
+    font-size:1.2em;
+    /* background: violet; */
+    /* 메뉴바가 세로가 너무 작아서 넓게 만듦 */
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    /* 메뉴바가 왼쪽에 있어서 오른쪽으로 넘김 */
+    justify-content: flex-end;
+}
+header .inner-header .menu-open .lnr-menu{
+    font-size: 33px;
+    margin-left: 15px;
+  
+}
+header .gnb{
+    /* 메뉴바의 속성들을 숨김 */
+    display: none;
+}
