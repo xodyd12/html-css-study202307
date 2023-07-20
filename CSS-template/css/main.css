@@ -335,3 +335,36 @@ section.contents .contact .inner .tel {
     font-weight: 700;
     margin: 50px 0;
 }
+/* footer */
+footer {
+    background: #1b1b1b;
+    color: #999;
+    padding: 0 80px 80px;
+}
+footer ul {
+    /* 수평배치함 */
+    display: flex;
+    /* 적당하게 margin 조절 하려고 space around 넣음 */
+    justify-content: space-around;
+    /* 글씨들을 수직으로 떨어지게 만듦 */
+    align-items: center;
+}
+footer ul li:nth-child(2) {
+    color: #eee;
+    font-size: 16px;
+    line-height: 2;
+}
+footer ul li:nth-child(2) span {
+    font-weight: 700;
+    margin-right: 10px;
+    color: #999;
+}
+
+footer .go-top{
+    color: #fff;
+    font-size: 50px;
+    /* 화살표를 오른쪽에 배치하고 나를 따라다니게 만듦 */
+    position: fixed;
+    right: 50px;
+    bottom: 60px;
+}
