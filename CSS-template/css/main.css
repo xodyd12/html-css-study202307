@@ -3,13 +3,13 @@
 
 body{
     color: white;
-    font: size 15px;
+    font-size:15px;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* header style */
 header{
-    background: orange;
+    /* background: orange; */
     padding: 20px 0;
     /* 헤더가 마우스를 스크롤 하면 따라 움직이도록 설정 */
     position: fixed;
@@ -63,9 +63,36 @@ header .inner-header .menu-open{
 header .inner-header .menu-open .lnr-menu{
     font-size: 33px;
     margin-left: 15px;
-  
 }
 header .gnb{
     /* 메뉴바의 속성들을 숨김 */
-    display: none;
+    /* display: none; */
+    background: #000;
+    color: #666;
+    font-weight: 700;
+    /* 텍스트를 오른쪽에 항상 고정 포지션은 텍스트를 세로로 정렬 */
+    position: fixed;
+    padding: 70px 100px;
+    height: 100vh;
+    /* 애니메이션 효과를 위해 메뉴를 오른쪽으로 아예 버림 */
+    right: -100%;
+    top: 0;
+    display: flex;
+    /* 메뉴창에 x 버튼의 순서를 맨 뒤로 바꿈  */
+    flex-direction: row-reverse;
+    transition: 0.8s;
+}
+head .gnb.open{
+    right: 0;
+}
+header .gnb .close{
+    color: white;
+    margin-left: 150px;
+}
+header .gnb ul{
+    line-height: 1.7;
+}
+header .gnb ul li:hover,
+header .gnb ul li.active{
+    color:white;
 }
