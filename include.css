@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: space-between;
 
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   top:0;
 }
@@ -72,6 +72,31 @@ body {
   background: url('anti.jpg')
      no-repeat center / cover;
   height: calc(100vh - 97px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#product-overview h2{
+  
+  font-size: 58px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.95);
+
+  animation: drop 2s linear;
+}
+@keyframes drop{
+  0%{
+    color: #fff;
+    opacity: 0;
+    transform: translate(0, -1000px);
+  }
+
+  100%{
+    color:aquamarine;
+    transform: translate(0, 0);
+  }
 }
 /* footer style */
 .main-footer{
